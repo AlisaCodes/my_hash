@@ -14,4 +14,20 @@ class My_Hash
       end
     end
   end
+
+  define_method(:myLength) do
+    @my_hash.count()
+  end
+
+  # This method is incomplete!
+  # define_method(:myMerge) do |addition|
+  #   # binding.pry
+  #   addition.get_hash().each() do |item|
+  #     @my_hash.push(item)
+  #   end
+  # end
+
+  define_method(:get_hash) do
+    return @my_hash
+  end
 end
